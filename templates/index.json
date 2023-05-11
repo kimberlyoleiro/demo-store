@@ -271,8 +271,8 @@
           "type": "collapsible_row",
           "settings": {
             "heading": "Collapsible row",
-            "icon": "check_mark",
-            "row_content": "",
+            "icon": "clipboard",
+            "row_content": "<p>The Top 10 Harmful Skincare Ingredients to Avoid<\/p><p>How to Make Your Own Clean Skincare Products at Home<\/p>",
             "page": ""
           }
         },
@@ -281,7 +281,7 @@
           "settings": {
             "heading": "Collapsible row",
             "icon": "check_mark",
-            "row_content": "",
+            "row_content": "<p>The Top 10 Harmful Skincare Ingredients to Avoid<\/p><p>How to Make Your Own Clean Skincare Products at Home<\/p>",
             "page": ""
           }
         },
@@ -290,7 +290,7 @@
           "settings": {
             "heading": "Collapsible row",
             "icon": "check_mark",
-            "row_content": "",
+            "row_content": "<p>The Top 10 Harmful Skincare Ingredients to Avoid<\/p><p>How to Make Your Own Clean Skincare Products at Home<\/p>",
             "page": ""
           }
         },
@@ -299,7 +299,7 @@
           "settings": {
             "heading": "Collapsible row",
             "icon": "check_mark",
-            "row_content": "",
+            "row_content": "<p>The Top 10 Harmful Skincare Ingredients to Avoid<\/p><p>How to Make Your Own Clean Skincare Products at Home<\/p>",
             "page": ""
           }
         }
