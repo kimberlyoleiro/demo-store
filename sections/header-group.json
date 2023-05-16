@@ -9,25 +9,45 @@
           "type": "announcement",
           "settings": {
             "text": "Welcome to our store",
-            "text_alignment": "center",
-            "color_scheme": "background-1",
+            "link": ""
+          }
+        },
+        "25cc890f-23ae-47ee-8a7e-01ae6a33fb1c": {
+          "type": "announcement",
+          "settings": {
+            "text": "Welcome to our store",
+            "link": ""
+          }
+        },
+        "bb91bca0-8ce8-42ba-9a62-f2d1ee59f52b": {
+          "type": "announcement",
+          "settings": {
+            "text": "Welcome to our store",
             "link": ""
           }
         }
       },
       "block_order": [
-        "announcement-bar-0"
-      ]
+        "announcement-bar-0",
+        "25cc890f-23ae-47ee-8a7e-01ae6a33fb1c",
+        "bb91bca0-8ce8-42ba-9a62-f2d1ee59f52b"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "show_line_separator": true,
+        "auto_rotate": false,
+        "change_slides_speed": 5
+      }
     },
     "header": {
       "type": "header",
       "settings": {
-        "color_scheme": "background-1",
         "logo_position": "middle-left",
         "menu": "main-menu",
         "menu_type_desktop": "dropdown",
         "sticky_header_type": "on-scroll-up",
         "show_line_separator": true,
+        "color_scheme": "background-1",
         "enable_country_selector": true,
         "enable_language_selector": true,
         "mobile_logo_position": "center",
