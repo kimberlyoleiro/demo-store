@@ -13,7 +13,7 @@
         "template--15954197545016__5b6819ca-acbd-448c-9a9b-9ee5e9ef2709-16849563082249fccc-0": {
           "type": "heading",
           "settings": {
-            "heading": "Scheme 1",
+            "heading": "Scheme 1 with Image",
             "heading_size": "h1"
           }
         },
@@ -38,6 +38,7 @@
         "template--15954197545016__5b6819ca-acbd-448c-9a9b-9ee5e9ef2709-16849563082249fccc-2"
       ],
       "settings": {
+        "image": "shopify:\/\/shop_images\/About-Facile-2021.webp",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "image_first",
