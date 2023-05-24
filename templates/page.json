@@ -13,7 +13,7 @@
         "template--15954197545016__5b6819ca-acbd-448c-9a9b-9ee5e9ef2709-16849563082249fccc-0": {
           "type": "heading",
           "settings": {
-            "heading": "Image with text",
+            "heading": "Scheme 1",
             "heading_size": "h1"
           }
         },
@@ -27,8 +27,8 @@
         "template--15954197545016__5b6819ca-acbd-448c-9a9b-9ee5e9ef2709-16849563082249fccc-2": {
           "type": "button",
           "settings": {
-            "button_label": "Button label",
-            "button_link": ""
+            "button_label": "Primary Button",
+            "button_link": "shopify:\/\/pages\/size-chart"
           }
         }
       },
@@ -44,16 +44,102 @@
         "desktop_content_position": "top",
         "desktop_content_alignment": "left",
         "content_layout": "no-overlap",
-        "color_scheme": "",
+        "color_scheme": "accent-2",
         "image_behavior": "none",
         "mobile_content_alignment": "left",
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "f61b3dd3-b37b-4cad-8f2a-e342b532e377": {
+      "type": "rich-text",
+      "blocks": {
+        "template--15954197545016__f61b3dd3-b37b-4cad-8f2a-e342b532e377-1684956547d74f3a63-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Scheme 1",
+            "heading_size": "h1"
+          }
+        },
+        "template--15954197545016__f61b3dd3-b37b-4cad-8f2a-e342b532e377-1684956547d74f3a63-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
+          }
+        },
+        "template--15954197545016__f61b3dd3-b37b-4cad-8f2a-e342b532e377-1684956547d74f3a63-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "Primary Button",
+            "button_link": "shopify:\/\/collections",
+            "button_style_secondary": false,
+            "button_label_2": "Outline Button",
+            "button_link_2": "shopify:\/\/collections\/summer-collection",
+            "button_style_secondary_2": true
+          }
+        }
+      },
+      "block_order": [
+        "template--15954197545016__f61b3dd3-b37b-4cad-8f2a-e342b532e377-1684956547d74f3a63-0",
+        "template--15954197545016__f61b3dd3-b37b-4cad-8f2a-e342b532e377-1684956547d74f3a63-1",
+        "template--15954197545016__f61b3dd3-b37b-4cad-8f2a-e342b532e377-1684956547d74f3a63-2"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "accent-2",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "9ad9a747-424e-4b01-a0a1-45b2120ac6f0": {
+      "type": "rich-text",
+      "blocks": {
+        "template--15954197545016__9ad9a747-424e-4b01-a0a1-45b2120ac6f0-1684956547d74f3a63-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Scheme 2",
+            "heading_size": "h1"
+          }
+        },
+        "template--15954197545016__9ad9a747-424e-4b01-a0a1-45b2120ac6f0-1684956547d74f3a63-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
+          }
+        },
+        "template--15954197545016__9ad9a747-424e-4b01-a0a1-45b2120ac6f0-1684956547d74f3a63-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "Primary Button",
+            "button_link": "shopify:\/\/collections",
+            "button_style_secondary": false,
+            "button_label_2": "Outline Button",
+            "button_link_2": "shopify:\/\/collections\/summer-collection",
+            "button_style_secondary_2": true
+          }
+        }
+      },
+      "block_order": [
+        "template--15954197545016__9ad9a747-424e-4b01-a0a1-45b2120ac6f0-1684956547d74f3a63-0",
+        "template--15954197545016__9ad9a747-424e-4b01-a0a1-45b2120ac6f0-1684956547d74f3a63-1",
+        "template--15954197545016__9ad9a747-424e-4b01-a0a1-45b2120ac6f0-1684956547d74f3a63-2"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "accent-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
     }
   },
   "order": [
     "main",
-    "5b6819ca-acbd-448c-9a9b-9ee5e9ef2709"
+    "5b6819ca-acbd-448c-9a9b-9ee5e9ef2709",
+    "f61b3dd3-b37b-4cad-8f2a-e342b532e377",
+    "9ad9a747-424e-4b01-a0a1-45b2120ac6f0"
   ]
 }
