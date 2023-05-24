@@ -55,10 +55,19 @@
         "padding_top": 20,
         "padding_bottom": 20
       }
+    },
+    "b3f79077-915c-4599-b58e-3a4c8d5621c7": {
+      "type": "marquee",
+      "settings": {
+        "marquee_text": "This is a marquee text banner!",
+        "marquee_speed": 50,
+        "marquee_color": "#000000"
+      }
     }
   },
   "order": [
     "announcement-bar",
-    "header"
+    "header",
+    "b3f79077-915c-4599-b58e-3a4c8d5621c7"
   ]
 }
