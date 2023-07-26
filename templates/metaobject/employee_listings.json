@@ -179,7 +179,7 @@
             "collection": "{{ metaobject.collection_reference.value }}"
           }
         },
-        "2b0c367c-f7a5-4241-bca4-e28391c58319": {
+        "272c0ad9-ebbe-4e92-b3c8-c2d8a8d88f2c": {
           "type": "product",
           "settings": {
             "product": "{{ metaobject.favourite_product_single_product_metafield_list_of_products.value }}",
@@ -190,7 +190,7 @@
       "block_order": [
         "template--16744992571448__bc848e23-699d-43a6-8105-67ab64bdc7fa-product-1",
         "template--16744992571448__bc848e23-699d-43a6-8105-67ab64bdc7fa-collection-1",
-        "2b0c367c-f7a5-4241-bca4-e28391c58319"
+        "272c0ad9-ebbe-4e92-b3c8-c2d8a8d88f2c"
       ],
       "settings": {
         "heading": "Multimedia collage",
