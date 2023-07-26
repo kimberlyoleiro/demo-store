@@ -1,0 +1,110 @@
+{{ 'section-collection-list.css' | asset_url | stylesheet_tag }}
+{{ 'component-card.css' | asset_url | stylesheet_tag }}
+{{ 'component-slider.css' | asset_url | stylesheet_tag }}
+{{ 'component-accordion.css' | asset_url | stylesheet_tag }}
+{{ 'collapsible-content.css' | asset_url | stylesheet_tag }}
+{{ 'component-rating.css' | asset_url | stylesheet_tag }}
+
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+    margin-bottom: 100px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+<div class="isolate gradient">
+  <div class="collection page-width section-{{ section.id }}-padding">
+    <div id="paginated-products">
+      {% if section.settings.product_list != blank %}
+        {% paginate section.settings.product_list by 4 %}
+          <ul
+            class="grid product-grid contains-card{% if settings.card_style == 'standard' %} contains-card--standard{% endif %}{% if section.settings.columns_desktop == 1 %} grid--full-width{% else %} grid--{{ section.settings.columns_desktop }}-col-desktop{% endif %}"
+            role="list"
+          >
+            {% for product in section.settings.product_list %}
+              <li class="grid__item">
+                {% render 'card-product',
+                  card_product: product,
+                  show_secondary_image: false,
+                  show_vendor: false,
+                  show_rating: true
+                %}
+              </li>
+            {%- endfor -%}
+          </ul>
+          {% if paginate.pages > 1 %}
+            {% render 'pagination', paginate: paginate, anchor: '#paginated-products-2' %}
+          {% endif %}
+        {% endpaginate %}
+      {% else %}
+        <ul
+          class="grid product-grid contains-card{% if settings.card_style == 'standard' %} contains-card--standard{% endif %}{% if section.settings.columns_desktop == 1 %} grid--full-width{% else %} grid--{{ section.settings.columns_desktop }}-col-desktop{% endif %}"
+          role="list"
+        >
+          <li class="grid__item">
+            {% render 'card-product',
+              card_product: product,
+              show_secondary_image: false,
+              show_vendor: false,
+              show_rating: true
+            %}
+          </li>
+          <li class="grid__item">
+            {% render 'card-product',
+              card_product: product,
+              show_secondary_image: false,
+              show_vendor: false,
+              show_rating: true
+            %}
+          </li>
+          <li class="grid__item">
+            {% render 'card-product',
+              card_product: product,
+              show_secondary_image: false,
+              show_vendor: false,
+              show_rating: true
+            %}
+          </li>
+          <li class="grid__item">
+            {% render 'card-product',
+              card_product: product,
+              show_secondary_image: false,
+              show_vendor: false,
+              show_rating: true
+            %}
+          </li>
+        </ul>
+      {% endif %}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Product List",
+  "settings": [
+    {
+      "type": "product_list",
+      "label": "Related Products",
+      "id": "product_list"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Product List",
+      "settings": {}
+    }
+  ]
+}
+{% endschema %}
+
+{% javascript %}
+{% endjavascript %}
