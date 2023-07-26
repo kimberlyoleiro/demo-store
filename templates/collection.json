@@ -14,19 +14,33 @@
         "products_per_page": 16,
         "columns_desktop": 4,
         "image_ratio": "adapt",
+        "image_shape": "default",
         "show_secondary_image": false,
         "show_vendor": false,
         "show_rating": false,
+        "enable_quick_add": false,
         "enable_filtering": true,
+        "filter_type": "horizontal",
         "enable_sorting": true,
         "columns_mobile": "2",
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "795a475c-1de6-41b6-ae12-425393e39861": {
+      "type": "product-list",
+      "settings": {
+        "product_list": [
+          "bare-necessity",
+          "barely-there",
+          "berry-lip-jelly-tint"
+        ]
+      }
     }
   },
   "order": [
     "banner",
-    "product-grid"
+    "product-grid",
+    "795a475c-1de6-41b6-ae12-425393e39861"
   ]
 }

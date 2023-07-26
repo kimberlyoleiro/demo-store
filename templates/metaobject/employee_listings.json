@@ -202,12 +202,19 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "d9165e1a-6abd-4233-bc4f-c819ba70434b": {
+      "type": "product-list",
+      "settings": {
+        "product_list": "{{ metaobject.product_list_v_2.value }}"
+      }
     }
   },
   "order": [
     "3389402b-bb16-4d3d-835a-93521e11c08b",
     "3e5c8fb4-6ddc-42fb-abee-a38e07fce250",
     "8d4287b0-362f-49a7-8561-3d909fa5599d",
-    "bc848e23-699d-43a6-8105-67ab64bdc7fa"
+    "bc848e23-699d-43a6-8105-67ab64bdc7fa",
+    "d9165e1a-6abd-4233-bc4f-c819ba70434b"
   ]
 }
