@@ -73,7 +73,7 @@
       "settings": {
         "title": "{{ metaobject.employee_name.value }}'s Favourite Products (Dynamic)",
         "heading_size": "h1",
-        "description": "",
+        "description": "<p>SECTION LEVEL DESCRIPTION<\/p>",
         "show_description": true,
         "description_style": "body",
         "collection": "",
