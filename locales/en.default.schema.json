@@ -713,7 +713,7 @@
       }
     },
     "featured-collection": {
-      "name": "Featured collection",
+      "name": "Featured product list",
       "settings": {
         "title": {
           "label": "Heading"

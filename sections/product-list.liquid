@@ -20,30 +20,42 @@
   }
 {%- endstyle -%}
 
+{%- liquid
+  assign product_source = ''
+
+  if section.settings.collection != blank
+    assign product_source = section.settings.collection.products
+  elsif section.settings.product_list != blank
+    assign product_source = section.settings.product_list
+  endif
+-%}
+
 <div class="isolate gradient">
   <div class="collection page-width section-{{ section.id }}-padding">
     <div id="paginated-products">
-      {% if section.settings.product_list != blank %}
-        {% paginate section.settings.product_list by 4 %}
-          <ul
-            class="grid product-grid contains-card{% if settings.card_style == 'standard' %} contains-card--standard{% endif %}{% if section.settings.columns_desktop == 1 %} grid--full-width{% else %} grid--{{ section.settings.columns_desktop }}-col-desktop{% endif %}"
-            role="list"
-          >
-            {% for product in section.settings.product_list %}
-              <li class="grid__item">
-                {% render 'card-product',
-                  card_product: product,
-                  show_secondary_image: false,
-                  show_vendor: false,
-                  show_rating: true
-                %}
-              </li>
-            {%- endfor -%}
-          </ul>
-          {% if paginate.pages > 1 %}
-            {% render 'pagination', paginate: paginate, anchor: '#paginated-products-2' %}
-          {% endif %}
-        {% endpaginate %}
+      {% assign first_product = product_source | first %}
+
+      <h2>{{ first_product.title }}</h2>
+
+      <h3>{{ product_source.sort_by }}</h3>
+
+      {% if product_source != blank %}
+        <ul
+          class="grid product-grid contains-card{% if settings.card_style == 'standard' %} contains-card--standard{% endif %}{% if section.settings.columns_desktop == 1 %} grid--full-width{% else %} grid--{{ section.settings.columns_desktop }}-col-desktop{% endif %}"
+          role="list"
+        >
+          {% for product in product_source %}
+            <li class="grid__item">
+              {% render 'card-product',
+                card_product: product,
+                show_secondary_image: false,
+                show_vendor: false,
+                show_rating: true
+              %}
+            </li>
+          {%- endfor -%}
+        </ul>
+
       {% else %}
         <ul
           class="grid product-grid contains-card{% if settings.card_style == 'standard' %} contains-card--standard{% endif %}{% if section.settings.columns_desktop == 1 %} grid--full-width{% else %} grid--{{ section.settings.columns_desktop }}-col-desktop{% endif %}"

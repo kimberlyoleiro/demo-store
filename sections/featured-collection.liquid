@@ -29,9 +29,18 @@
 {%- endstyle -%}
 
 {%- liquid
-  assign products_to_display = section.settings.collection.all_products_count
+  assign product_source = ''
+  assign products_to_display = 0
 
-  if section.settings.collection.all_products_count > section.settings.products_to_show
+  if section.settings.collection != blank
+    assign product_source = section.settings.collection.products
+    assign products_to_display = section.settings.collection.all_products_count
+  elsif section.settings.product_list != blank
+    assign product_source = section.settings.product_list
+    assign products_to_display = section.settings.product_list.count
+  endif
+
+  if products_to_display > section.settings.products_to_show
     assign products_to_display = section.settings.products_to_show
     assign more_in_collection = true
   endif
@@ -77,7 +86,7 @@
         role="list"
         aria-label="{{ 'general.slider.name' | t }}"
       >
-        {%- for product in section.settings.collection.products limit: section.settings.products_to_show -%}
+        {%- for product in product_source limit: section.settings.products_to_show -%}
           <li
             id="Slide-{{ section.id }}-{{ forloop.index }}"
             class="grid__item{% if show_mobile_slider or show_desktop_slider %} slider__slide{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
@@ -174,7 +183,7 @@
     {
       "type": "inline_richtext",
       "id": "title",
-      "default": "Featured collection",
+      "default": "Featured product list",
       "label": "t:sections.featured-collection.settings.title.label"
     },
     {
@@ -229,9 +238,19 @@
       "default": "body"
     },
     {
+      "type": "header",
+      "content": "Select Featured Products",
+      "info": "If both a collection and individual products are selected, the collection will take precedence"
+    },
+    {
       "type": "collection",
       "id": "collection",
-      "label": "t:sections.featured-collection.settings.collection.label"
+      "label": "Select a collection"
+    },
+    {
+      "type": "product_list",
+      "id": "product_list",
+      "label": "Select individual products"
     },
     {
       "type": "range",
@@ -439,7 +458,7 @@
   ],
   "presets": [
     {
-      "name": "t:sections.featured-collection.presets.name"
+      "name": "t:sections.featured-collection.name"
     }
   ]
 }
