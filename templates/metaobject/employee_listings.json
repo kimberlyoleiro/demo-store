@@ -74,7 +74,7 @@
         "title": "{{ metaobject.employee_name.value }}'s Favourite Products (Dynamic)",
         "heading_size": "h1",
         "description": "",
-        "show_description": false,
+        "show_description": true,
         "description_style": "body",
         "collection": "",
         "product_list": "{{ metaobject.product_list_v_2.value }}",
