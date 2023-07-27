@@ -76,7 +76,7 @@
         "description": "",
         "show_description": false,
         "description_style": "body",
-        "collection": "",
+        "collection": "gift-sets",
         "product_list": [
 
         ],
@@ -109,7 +109,10 @@
         "description_style": "body",
         "collection": "",
         "product_list": [
-
+          "bare-necessity",
+          "barely-there",
+          "berry-lip-jelly-tint",
+          "brighten"
         ],
         "products_to_show": 4,
         "columns_desktop": 4,
@@ -138,7 +141,7 @@
         "description": "",
         "show_description": false,
         "description_style": "body",
-        "collection": "",
+        "collection": "{{ metaobject.collection_reference.value }}",
         "product_list": [
 
         ],
@@ -170,9 +173,7 @@
         "show_description": false,
         "description_style": "body",
         "collection": "",
-        "product_list": [
-
-        ],
+        "product_list": "{{ metaobject.product_list_v_2.value }}",
         "products_to_show": 4,
         "columns_desktop": 4,
         "full_width": false,
