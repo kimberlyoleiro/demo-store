@@ -97,17 +97,20 @@
         "padding_bottom": 36
       }
     },
-    "4ede76dc-dd32-4e9b-99cf-bd1ee98c4d11": {
+    "152006f3-3e1d-4828-913c-006eea010bae": {
       "type": "featured-collection",
       "settings": {
-        "title": "Featured Collection - Manual",
+        "title": "{{ metaobject.employee_name.value }}'s Favourite Collection (Dynamic)",
         "heading_size": "h1",
         "description": "",
         "show_description": false,
         "description_style": "body",
-        "collection": "gift-sets",
+        "collection": "",
         "product_list": [
-
+          "bare-necessity",
+          "barely-there",
+          "berry-lip-jelly-tint",
+          "brighten"
         ],
         "products_to_show": 4,
         "columns_desktop": 4,
@@ -128,20 +131,17 @@
         "padding_bottom": 36
       }
     },
-    "152006f3-3e1d-4828-913c-006eea010bae": {
+    "4ede76dc-dd32-4e9b-99cf-bd1ee98c4d11": {
       "type": "featured-collection",
       "settings": {
-        "title": "Featured Collection - Dynamic Source",
+        "title": "Featured Collection - Manual",
         "heading_size": "h1",
         "description": "",
         "show_description": false,
         "description_style": "body",
-        "collection": "",
+        "collection": "gift-sets",
         "product_list": [
-          "bare-necessity",
-          "barely-there",
-          "berry-lip-jelly-tint",
-          "brighten"
+
         ],
         "products_to_show": 4,
         "columns_desktop": 4,
@@ -198,8 +198,8 @@
     "8d4287b0-362f-49a7-8561-3d909fa5599d",
     "d9165e1a-6abd-4233-bc4f-c819ba70434b",
     "37fc16eb-442c-4eb0-b0cf-0d9a49a88077",
-    "4ede76dc-dd32-4e9b-99cf-bd1ee98c4d11",
     "152006f3-3e1d-4828-913c-006eea010bae",
+    "4ede76dc-dd32-4e9b-99cf-bd1ee98c4d11",
     "26287e1a-b30d-45d2-a39e-20dad2b440e0"
   ]
 }
