@@ -170,9 +170,12 @@
         "description": "",
         "show_description": false,
         "description_style": "body",
-        "collection": "{{ metaobject.collection_reference.value }}",
+        "collection": "",
         "product_list": [
-
+          "claw-clip",
+          "headband",
+          "sweat-set",
+          "tote-bag"
         ],
         "products_to_show": 4,
         "columns_desktop": 4,
