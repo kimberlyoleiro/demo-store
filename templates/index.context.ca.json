@@ -4,5 +4,16 @@
     "market": "ca"
   },
   "sections": {
+    "image_banner": {
+      "settings": {
+      },
+      "blocks": {
+        "heading": {
+          "settings": {
+            "heading": "Image banner_CAD"
+          }
+        }
+      }
+    }
   }
 }
