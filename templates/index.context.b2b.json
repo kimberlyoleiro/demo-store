@@ -4,5 +4,16 @@
     "b2b": true
   },
   "sections": {
+    "image_banner": {
+      "settings": {
+      },
+      "blocks": {
+        "heading": {
+          "settings": {
+            "heading": "B2B Context Change Image banner"
+          }
+        }
+      }
+    }
   }
 }
